@@ -1,0 +1,9 @@
+{
+  "name": "deferred",
+  "description": "Tiny Deferred thing on top of Promises",
+  "version": "0.0.1",
+  "devDependencies": {
+    "co": "^4.6.0",
+    "co-sleep": "0.0.1"
+  }
+}
