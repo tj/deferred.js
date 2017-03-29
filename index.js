@@ -7,4 +7,8 @@ module.exports = function Deferred() {
 
   this.then = p.then.bind(p)
   this.catch = p.catch.bind(p)
+  this.cb = (err, val) => {
+    if (err) this.catch(err)
+    else this.then(val)
+  }
 }
